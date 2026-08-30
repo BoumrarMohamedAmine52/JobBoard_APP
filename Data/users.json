@@ -1,5 +1,6 @@
 [
   {
+    "_id": "6a947fa36cc24901e3d1a078",
     "fullName": "Thalen Corwick",
     "email": "thalen.corwick@stripe.com",
     "password": "test1234",
@@ -12,6 +13,7 @@
     "active": true
   },
   {
+    "_id": "6a947fa36cc24901e3d1a079",
     "fullName": "Miren Ashvale",
     "email": "miren.ashvale@spotify.com",
     "password": "test1234",
@@ -24,6 +26,7 @@
     "active": true
   },
   {
+    "_id": "6a947fa36cc24901e3d1a07a",
     "fullName": "Devrin Okalu",
     "email": "devrin.okalu@booking.com",
     "password": "test1234",
@@ -36,6 +39,7 @@
     "active": true
   },
   {
+    "_id": "6a947fa36cc24901e3d1a07b",
     "fullName": "Sable Rennick",
     "email": "sable.rennick@shopify.com",
     "password": "test1234",
@@ -48,6 +52,7 @@
     "active": true
   },
   {
+    "_id": "6a947fa36cc24901e3d1a07c",
     "fullName": "Corin Vessalt",
     "email": "corin.vessalt@gitlab.com",
     "password": "test1234",
@@ -60,6 +65,7 @@
     "active": true
   },
   {
+    "_id": "6a947fa36cc24901e3d1a07d",
     "fullName": "Yselle Kantor",
     "email": "yselle.kantor@revolut.com",
     "password": "test1234",
@@ -72,6 +78,7 @@
     "active": true
   },
   {
+    "_id": "6a947fa36cc24901e3d1a07e",
     "fullName": "Bramwell Ostrey",
     "email": "bramwell.ostrey@ibm.com",
     "password": "test1234",
@@ -84,6 +91,7 @@
     "active": true
   },
   {
+    "_id": "6a947fa36cc24901e3d1a07f",
     "fullName": "Perrin Fenholt",
     "email": "perrin.fenholt@zendesk.com",
     "password": "test1234",
@@ -96,6 +104,72 @@
     "active": true
   },
   {
+    "_id": "6a947fa36cc24901e3d1a080",
+    "fullName": "Wendla Ashcombe",
+    "email": "wendla.ashcombe@deliveryhero.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+49 30 1234 5678",
+    "location": "Berlin, Germany",
+    "role": "employer",
+    "company": "Delivery Hero",
+    "profilePicture": "user15.png",
+    "active": true
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1a081",
+    "fullName": "Denholm Astrey",
+    "email": "denholm.astrey@microsoft.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+1 425 555 0134",
+    "location": "Seattle, Washington, USA",
+    "role": "employer",
+    "company": "Microsoft",
+    "profilePicture": "user16.png",
+    "active": true
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1a082",
+    "fullName": "Fennwick Draye",
+    "email": "fennwick.draye@atlassian.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+61 2 8000 1234",
+    "location": "Sydney, Australia",
+    "role": "employer",
+    "company": "Atlassian",
+    "profilePicture": "user17.png",
+    "active": true
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1a083",
+    "fullName": "Tamsin Wrolick",
+    "email": "tamsin.wrolick@airbnb.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+1 415 555 0187",
+    "location": "San Francisco, California, USA",
+    "role": "employer",
+    "company": "Airbnb",
+    "profilePicture": "user18.png",
+    "active": true
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1a084",
+    "fullName": "Osgar Fenlow",
+    "email": "osgar.fenlow@thalesgroup.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+33 1 23 45 67 89",
+    "location": "Paris, France",
+    "role": "employer",
+    "company": "Thales Group",
+    "profilePicture": "user19.png",
+    "active": true
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1a085",
     "fullName": "Sarien Voltaix",
     "email": "sarien.voltaix@mailbox.com",
     "password": "test1234",
@@ -110,7 +184,13 @@
           "dates": "March 2025 - September 2025"
         }
       ],
-      "coreSkills": ["Node.js", "Express", "MongoDB", "JavaScript", "Git"],
+      "coreSkills": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JavaScript",
+        "Git"
+      ],
       "education": [
         "Master's Degree in Big Data Analytics",
         "Bachelor's Degree in Operational Research"
@@ -125,12 +205,13 @@
     "active": true
   },
   {
+    "_id": "6a947fa36cc24901e3d1a086",
     "fullName": "Marlow Q. Dennett",
     "email": "marlow.dennett@mailbox.com",
     "password": "test1234",
     "passwordConfirm": "test1234",
     "phoneNumber": "+213 662 33 21 09",
-    "location": "Béjaïa, Algeria",
+    "location": "B\u00e9ja\u00efa, Algeria",
     "CandidateProfile": {
       "workExperience": [
         {
@@ -144,7 +225,13 @@
           "dates": "June 2022 - December 2023"
         }
       ],
-      "coreSkills": ["React", "JavaScript", "CSS", "Tailwind CSS", "Figma"],
+      "coreSkills": [
+        "React",
+        "JavaScript",
+        "CSS",
+        "Tailwind CSS",
+        "Figma"
+      ],
       "education": [
         "Bachelor's Degree in Computer Science"
       ],
@@ -158,6 +245,7 @@
     "active": true
   },
   {
+    "_id": "6a947fa36cc24901e3d1a087",
     "fullName": "Wrenna Silt",
     "email": "wrenna.silt@mailbox.com",
     "password": "test1234",
@@ -166,7 +254,14 @@
     "location": "Djelfa, Algeria",
     "CandidateProfile": {
       "workExperience": [],
-      "coreSkills": ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "Express"],
+      "coreSkills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Node.js",
+        "MongoDB",
+        "Express"
+      ],
       "education": [
         "Master's Degree in Big Data Analytics",
         "Bachelor's Degree in Operational Research"
@@ -180,6 +275,7 @@
     "active": true
   },
   {
+    "_id": "6a947fa36cc24901e3d1a088",
     "fullName": "Osric Vantry",
     "email": "osric.vantry@mailbox.com",
     "password": "test1234",
@@ -194,7 +290,13 @@
           "dates": "September 2023 - Present"
         }
       ],
-      "coreSkills": ["SQL", "Python", "Power BI", "Excel", "Statistics"],
+      "coreSkills": [
+        "SQL",
+        "Python",
+        "Power BI",
+        "Excel",
+        "Statistics"
+      ],
       "education": [
         "Master's Degree in Statistics and Data Science"
       ],
@@ -208,6 +310,7 @@
     "active": true
   },
   {
+    "_id": "6a947fa36cc24901e3d1a089",
     "fullName": "Isolde Marrow",
     "email": "isolde.marrow@mailbox.com",
     "password": "test1234",
@@ -222,7 +325,13 @@
           "dates": "July 2024 - January 2025"
         }
       ],
-      "coreSkills": ["AWS", "Docker", "Linux", "Bash", "CI/CD"],
+      "coreSkills": [
+        "AWS",
+        "Docker",
+        "Linux",
+        "Bash",
+        "CI/CD"
+      ],
       "education": [
         "Bachelor's Degree in Computer Engineering"
       ],
@@ -235,6 +344,7 @@
     "active": true
   },
   {
+    "_id": "6a947fa36cc24901e3d1a08a",
     "fullName": "Callix Rovane",
     "email": "callix.rovane@mailbox.com",
     "password": "test1234",
@@ -243,7 +353,12 @@
     "location": "Annaba, Algeria",
     "CandidateProfile": {
       "workExperience": [],
-      "coreSkills": ["Figma", "User Research", "Adobe XD", "Prototyping"],
+      "coreSkills": [
+        "Figma",
+        "User Research",
+        "Adobe XD",
+        "Prototyping"
+      ],
       "education": [
         "Bachelor's Degree in Digital Design"
       ],

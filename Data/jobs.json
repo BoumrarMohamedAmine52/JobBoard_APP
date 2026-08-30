@@ -1,5 +1,6 @@
 [
   {
+    "_id": "6a947fa36cc24901e3d1b001",
     "title": "Backend Developer (Node.js)",
     "location": "Dublin, Ireland",
     "type": "full-time",
@@ -16,15 +17,32 @@
       "Bachelor's degree in Computer Science or related field",
       "2+ years of professional backend development experience"
     ],
-    "skills": ["Node.js", "Express", "MongoDB", "REST APIs", "Git", "Docker"],
+    "skills": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "REST APIs",
+      "Git",
+      "Docker"
+    ],
     "salaryMin": 90000,
     "salaryMax": 140000,
-    "benefits": ["Health insurance", "Remote work flexibility", "Annual training budget", "Stock options"],
-    "applyingMethod": ["careers@stripe.com", "https://stripe.com/jobs"],
+    "benefits": [
+      "Health insurance",
+      "Remote work flexibility",
+      "Annual training budget",
+      "Stock options"
+    ],
+    "applyingMethod": [
+      "careers@stripe.com",
+      "https://stripe.com/jobs"
+    ],
     "jobStatus": "open",
-    "applicationDeadline": "2026-10-15"
+    "applicationDeadline": "2026-10-15",
+    "postedBy": "6a947fa36cc24901e3d1a078"
   },
   {
+    "_id": "6a947fa36cc24901e3d1b002",
     "title": "Frontend Developer (React)",
     "location": "Remote",
     "type": "remote",
@@ -40,15 +58,29 @@
       "1+ years of experience with React or a similar framework",
       "Strong understanding of HTML, CSS, and modern JavaScript"
     ],
-    "skills": ["React", "JavaScript", "Tailwind CSS", "Redux", "Figma"],
+    "skills": [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Redux",
+      "Figma"
+    ],
     "salaryMin": 70000,
     "salaryMax": 110000,
-    "benefits": ["Fully remote", "Flexible hours", "Home office stipend"],
-    "applyingMethod": ["https://spotifyjobs.com/frontend-dev"],
+    "benefits": [
+      "Fully remote",
+      "Flexible hours",
+      "Home office stipend"
+    ],
+    "applyingMethod": [
+      "https://spotifyjobs.com/frontend-dev"
+    ],
     "jobStatus": "open",
-    "applicationDeadline": "2026-09-30"
+    "applicationDeadline": "2026-09-30",
+    "postedBy": "6a947fa36cc24901e3d1a079"
   },
   {
+    "_id": "6a947fa36cc24901e3d1b003",
     "title": "Data Analyst",
     "location": "Amsterdam, Netherlands",
     "type": "full-time",
@@ -64,15 +96,30 @@
       "Bachelor's or Master's degree in Statistics, Data Science, Operational Research, or related field",
       "Comfortable working with large datasets"
     ],
-    "skills": ["SQL", "Power BI", "Excel", "Python", "Data Visualization"],
+    "skills": [
+      "SQL",
+      "Power BI",
+      "Excel",
+      "Python",
+      "Data Visualization"
+    ],
     "salaryMin": 75000,
     "salaryMax": 100000,
-    "benefits": ["Health insurance", "Relocation assistance", "Performance bonus"],
-    "applyingMethod": ["hr@booking.com", "https://careers.booking.com"],
+    "benefits": [
+      "Health insurance",
+      "Relocation assistance",
+      "Performance bonus"
+    ],
+    "applyingMethod": [
+      "hr@booking.com",
+      "https://careers.booking.com"
+    ],
     "jobStatus": "open",
-    "applicationDeadline": "2026-10-01"
+    "applicationDeadline": "2026-10-01",
+    "postedBy": "6a947fa36cc24901e3d1a07a"
   },
   {
+    "_id": "6a947fa36cc24901e3d1b004",
     "title": "Junior Web Developer",
     "location": "Austin, Texas, USA",
     "type": "part-time",
@@ -88,15 +135,28 @@
       "Currently studying or recently graduated in a related field",
       "A portfolio of at least 2-3 personal or academic projects"
     ],
-    "skills": ["HTML", "CSS", "JavaScript", "Liquid", "Git"],
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Liquid",
+      "Git"
+    ],
     "salaryMin": 35000,
     "salaryMax": 50000,
-    "benefits": ["Flexible schedule", "Mentorship from senior developers"],
-    "applyingMethod": ["jobs@shopify.com"],
+    "benefits": [
+      "Flexible schedule",
+      "Mentorship from senior developers"
+    ],
+    "applyingMethod": [
+      "jobs@shopify.com"
+    ],
     "jobStatus": "open",
-    "applicationDeadline": "2026-09-20"
+    "applicationDeadline": "2026-09-20",
+    "postedBy": "6a947fa36cc24901e3d1a07b"
   },
   {
+    "_id": "6a947fa36cc24901e3d1b005",
     "title": "DevOps Engineer",
     "location": "Remote",
     "type": "remote",
@@ -112,15 +172,31 @@
       "3+ years of experience in a DevOps or SRE role",
       "Experience with AWS or another major cloud provider"
     ],
-    "skills": ["AWS", "Docker", "Kubernetes", "Terraform", "CI/CD", "Linux"],
+    "skills": [
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
     "salaryMin": 130000,
     "salaryMax": 180000,
-    "benefits": ["Fully remote", "Health insurance", "Stock options", "Unlimited PTO"],
-    "applyingMethod": ["https://about.gitlab.com/jobs/devops-engineer"],
+    "benefits": [
+      "Fully remote",
+      "Health insurance",
+      "Stock options",
+      "Unlimited PTO"
+    ],
+    "applyingMethod": [
+      "https://about.gitlab.com/jobs/devops-engineer"
+    ],
     "jobStatus": "open",
-    "applicationDeadline": "2026-11-01"
+    "applicationDeadline": "2026-11-01",
+    "postedBy": "6a947fa36cc24901e3d1a07c"
   },
   {
+    "_id": "6a947fa36cc24901e3d1b006",
     "title": "UI/UX Designer",
     "location": "London, United Kingdom",
     "type": "full-time",
@@ -136,15 +212,28 @@
       "3+ years of experience in UI/UX design",
       "A strong portfolio demonstrating end-to-end design process"
     ],
-    "skills": ["Figma", "User Research", "Prototyping", "Design Systems"],
+    "skills": [
+      "Figma",
+      "User Research",
+      "Prototyping",
+      "Design Systems"
+    ],
     "salaryMin": 95000,
     "salaryMax": 130000,
-    "benefits": ["Health insurance", "Remote work flexibility", "Annual training budget"],
-    "applyingMethod": ["careers@revolut.com"],
+    "benefits": [
+      "Health insurance",
+      "Remote work flexibility",
+      "Annual training budget"
+    ],
+    "applyingMethod": [
+      "careers@revolut.com"
+    ],
     "jobStatus": "paused",
-    "applicationDeadline": "2026-12-01"
+    "applicationDeadline": "2026-12-01",
+    "postedBy": "6a947fa36cc24901e3d1a07d"
   },
   {
+    "_id": "6a947fa36cc24901e3d1b007",
     "title": "Machine Learning Engineer",
     "location": "Remote",
     "type": "contract",
@@ -160,15 +249,29 @@
       "Master's degree in Data Science, Statistics, or related field",
       "Proven experience deploying ML models to production"
     ],
-    "skills": ["Python", "Scikit-learn", "TensorFlow", "Pandas", "SQL"],
+    "skills": [
+      "Python",
+      "Scikit-learn",
+      "TensorFlow",
+      "Pandas",
+      "SQL"
+    ],
     "salaryMin": 150000,
     "salaryMax": 200000,
-    "benefits": ["Fully remote", "Flexible contract terms"],
-    "applyingMethod": ["talent@ibm.com", "https://ibm.com/careers"],
+    "benefits": [
+      "Fully remote",
+      "Flexible contract terms"
+    ],
+    "applyingMethod": [
+      "talent@ibm.com",
+      "https://ibm.com/careers"
+    ],
     "jobStatus": "open",
-    "applicationDeadline": "2026-09-25"
+    "applicationDeadline": "2026-09-25",
+    "postedBy": "6a947fa36cc24901e3d1a07e"
   },
   {
+    "_id": "6a947fa36cc24901e3d1b008",
     "title": "Customer Support Specialist",
     "location": "Lisbon, Portugal",
     "type": "full-time",
@@ -184,15 +287,27 @@
       "Excellent written communication skills in English",
       "Prior customer support experience is a plus"
     ],
-    "skills": ["Customer Support", "Zendesk", "Communication", "Problem Solving"],
+    "skills": [
+      "Customer Support",
+      "Zendesk",
+      "Communication",
+      "Problem Solving"
+    ],
     "salaryMin": 45000,
     "salaryMax": 60000,
-    "benefits": ["Health insurance", "Performance bonus"],
-    "applyingMethod": ["hr@zendesk.com"],
+    "benefits": [
+      "Health insurance",
+      "Performance bonus"
+    ],
+    "applyingMethod": [
+      "hr@zendesk.com"
+    ],
     "jobStatus": "closed",
-    "applicationDeadline": "2026-08-15"
+    "applicationDeadline": "2026-08-15",
+    "postedBy": "6a947fa36cc24901e3d1a07f"
   },
   {
+    "_id": "6a947fa36cc24901e3d1b009",
     "title": "Full Stack Developer (MERN)",
     "location": "Berlin, Germany",
     "type": "full-time",
@@ -208,15 +323,31 @@
       "Bachelor's degree in Computer Science or equivalent experience",
       "2+ years of experience with the MERN stack"
     ],
-    "skills": ["MongoDB", "Express", "React", "Node.js", "TypeScript"],
+    "skills": [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node.js",
+      "TypeScript"
+    ],
     "salaryMin": 85000,
     "salaryMax": 125000,
-    "benefits": ["Relocation assistance", "Health insurance", "Language classes", "Gym membership"],
-    "applyingMethod": ["careers@deliveryhero.com", "https://careers.deliveryhero.com"],
+    "benefits": [
+      "Relocation assistance",
+      "Health insurance",
+      "Language classes",
+      "Gym membership"
+    ],
+    "applyingMethod": [
+      "careers@deliveryhero.com",
+      "https://careers.deliveryhero.com"
+    ],
     "jobStatus": "open",
-    "applicationDeadline": "2026-10-20"
+    "applicationDeadline": "2026-10-20",
+    "postedBy": "6a947fa36cc24901e3d1a080"
   },
   {
+    "_id": "6a947fa36cc24901e3d1b00a",
     "title": "Cloud Solutions Architect",
     "location": "Seattle, Washington, USA",
     "type": "full-time",
@@ -232,15 +363,30 @@
       "5+ years of experience in cloud architecture or infrastructure roles",
       "Azure certifications preferred"
     ],
-    "skills": ["Azure", "Cloud Architecture", "Networking", "Security", "PowerShell"],
+    "skills": [
+      "Azure",
+      "Cloud Architecture",
+      "Networking",
+      "Security",
+      "PowerShell"
+    ],
     "salaryMin": 160000,
     "salaryMax": 210000,
-    "benefits": ["Health insurance", "401k matching", "Stock options", "Generous PTO"],
-    "applyingMethod": ["https://careers.microsoft.com/cloud-solutions-architect"],
+    "benefits": [
+      "Health insurance",
+      "401k matching",
+      "Stock options",
+      "Generous PTO"
+    ],
+    "applyingMethod": [
+      "https://careers.microsoft.com/cloud-solutions-architect"
+    ],
     "jobStatus": "open",
-    "applicationDeadline": "2026-11-10"
+    "applicationDeadline": "2026-11-10",
+    "postedBy": "6a947fa36cc24901e3d1a081"
   },
   {
+    "_id": "6a947fa36cc24901e3d1b00b",
     "title": "QA Automation Engineer",
     "location": "Remote",
     "type": "remote",
@@ -256,15 +402,29 @@
       "2+ years of experience in QA automation",
       "Familiarity with CI/CD pipelines"
     ],
-    "skills": ["Selenium", "Cypress", "JavaScript", "CI/CD", "Test Planning"],
+    "skills": [
+      "Selenium",
+      "Cypress",
+      "JavaScript",
+      "CI/CD",
+      "Test Planning"
+    ],
     "salaryMin": 80000,
     "salaryMax": 115000,
-    "benefits": ["Fully remote", "Health insurance", "Annual wellness stipend"],
-    "applyingMethod": ["https://www.atlassian.com/company/careers/qa-automation"],
+    "benefits": [
+      "Fully remote",
+      "Health insurance",
+      "Annual wellness stipend"
+    ],
+    "applyingMethod": [
+      "https://www.atlassian.com/company/careers/qa-automation"
+    ],
     "jobStatus": "open",
-    "applicationDeadline": "2026-10-05"
+    "applicationDeadline": "2026-10-05",
+    "postedBy": "6a947fa36cc24901e3d1a082"
   },
   {
+    "_id": "6a947fa36cc24901e3d1b00c",
     "title": "Product Manager, Growth",
     "location": "San Francisco, California, USA",
     "type": "full-time",
@@ -280,15 +440,29 @@
       "4+ years of product management experience, ideally in growth",
       "Strong analytical and experimentation background"
     ],
-    "skills": ["Product Strategy", "A/B Testing", "SQL", "Data Analysis", "Roadmapping"],
+    "skills": [
+      "Product Strategy",
+      "A/B Testing",
+      "SQL",
+      "Data Analysis",
+      "Roadmapping"
+    ],
     "salaryMin": 140000,
     "salaryMax": 190000,
-    "benefits": ["Health insurance", "Annual travel credit", "Stock options"],
-    "applyingMethod": ["https://careers.airbnb.com/positions/growth-pm"],
+    "benefits": [
+      "Health insurance",
+      "Annual travel credit",
+      "Stock options"
+    ],
+    "applyingMethod": [
+      "https://careers.airbnb.com/positions/growth-pm"
+    ],
     "jobStatus": "open",
-    "applicationDeadline": "2026-10-30"
+    "applicationDeadline": "2026-10-30",
+    "postedBy": "6a947fa36cc24901e3d1a083"
   },
   {
+    "_id": "6a947fa36cc24901e3d1b00d",
     "title": "Mobile Developer (Flutter)",
     "location": "Toronto, Canada",
     "type": "contract",
@@ -304,15 +478,28 @@
       "2+ years of experience building mobile apps with Flutter",
       "Experience publishing apps to the App Store and Google Play"
     ],
-    "skills": ["Flutter", "Dart", "Mobile Development", "REST APIs", "Git"],
+    "skills": [
+      "Flutter",
+      "Dart",
+      "Mobile Development",
+      "REST APIs",
+      "Git"
+    ],
     "salaryMin": 90000,
     "salaryMax": 130000,
-    "benefits": ["Flexible contract terms", "Remote-friendly"],
-    "applyingMethod": ["jobs@shopify.com"],
+    "benefits": [
+      "Flexible contract terms",
+      "Remote-friendly"
+    ],
+    "applyingMethod": [
+      "jobs@shopify.com"
+    ],
     "jobStatus": "open",
-    "applicationDeadline": "2026-09-28"
+    "applicationDeadline": "2026-09-28",
+    "postedBy": "6a947fa36cc24901e3d1a07b"
   },
   {
+    "_id": "6a947fa36cc24901e3d1b00e",
     "title": "Technical Writer",
     "location": "Remote",
     "type": "part-time",
@@ -328,15 +515,27 @@
       "Experience writing technical documentation for developers",
       "Comfortable working with Markdown and Git"
     ],
-    "skills": ["Technical Writing", "Markdown", "Git", "Documentation Tools"],
+    "skills": [
+      "Technical Writing",
+      "Markdown",
+      "Git",
+      "Documentation Tools"
+    ],
     "salaryMin": 40000,
     "salaryMax": 60000,
-    "benefits": ["Fully remote", "Flexible hours"],
-    "applyingMethod": ["https://about.gitlab.com/jobs/technical-writer"],
+    "benefits": [
+      "Fully remote",
+      "Flexible hours"
+    ],
+    "applyingMethod": [
+      "https://about.gitlab.com/jobs/technical-writer"
+    ],
     "jobStatus": "open",
-    "applicationDeadline": "2026-09-22"
+    "applicationDeadline": "2026-09-22",
+    "postedBy": "6a947fa36cc24901e3d1a07c"
   },
   {
+    "_id": "6a947fa36cc24901e3d1b00f",
     "title": "Cybersecurity Analyst",
     "location": "Paris, France",
     "type": "full-time",
@@ -352,12 +551,24 @@
       "Bachelor's degree in Cybersecurity, Computer Science, or related field",
       "2+ years of experience in a security operations role"
     ],
-    "skills": ["Security Monitoring", "SIEM Tools", "Incident Response", "Networking"],
+    "skills": [
+      "Security Monitoring",
+      "SIEM Tools",
+      "Incident Response",
+      "Networking"
+    ],
     "salaryMin": 70000,
     "salaryMax": 105000,
-    "benefits": ["Health insurance", "Relocation assistance", "Annual training budget"],
-    "applyingMethod": ["careers@thalesgroup.com"],
+    "benefits": [
+      "Health insurance",
+      "Relocation assistance",
+      "Annual training budget"
+    ],
+    "applyingMethod": [
+      "careers@thalesgroup.com"
+    ],
     "jobStatus": "open",
-    "applicationDeadline": "2026-10-12"
+    "applicationDeadline": "2026-10-12",
+    "postedBy": "6a947fa36cc24901e3d1a084"
   }
 ]

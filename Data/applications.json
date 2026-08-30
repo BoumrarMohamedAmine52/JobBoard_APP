@@ -1,0 +1,242 @@
+[
+  {
+    "_id": "6a947fa36cc24901e3d1c001",
+    "candidate": "6a947fa36cc24901e3d1a08a",
+    "job": "6a947fa36cc24901e3d1b002",
+    "createdAt": "2026-08-08",
+    "coverLetter": "I believe my experience and enthusiasm for Figma align well with what Spotify is looking for, and I'd love to bring that energy to your team.",
+    "status": "pending"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c002",
+    "candidate": "6a947fa36cc24901e3d1a08a",
+    "job": "6a947fa36cc24901e3d1b00c",
+    "createdAt": "2026-08-01",
+    "coverLetter": "This role caught my attention because of the emphasis on Figma, an area I've been actively developing. I'd welcome the chance to discuss how I could contribute.",
+    "status": "pending"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c003",
+    "candidate": "6a947fa36cc24901e3d1a086",
+    "job": "6a947fa36cc24901e3d1b004",
+    "createdAt": "2026-09-07",
+    "coverLetter": "This role caught my attention because of the emphasis on Figma, an area I've been actively developing. I'd welcome the chance to discuss how I could contribute.",
+    "status": "pending"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c004",
+    "candidate": "6a947fa36cc24901e3d1a086",
+    "job": "6a947fa36cc24901e3d1b008",
+    "createdAt": "2026-08-01",
+    "coverLetter": "With a solid foundation in Figma, I'm eager to bring my problem-solving approach and attention to detail to this position at Zendesk.",
+    "status": "accepted"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c005",
+    "candidate": "6a947fa36cc24901e3d1a08a",
+    "job": "6a947fa36cc24901e3d1b007",
+    "createdAt": "2026-09-25",
+    "coverLetter": "With a solid foundation in Adobe XD, I'm eager to bring my problem-solving approach and attention to detail to this position at IBM.",
+    "status": "pending"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c006",
+    "candidate": "6a947fa36cc24901e3d1a085",
+    "job": "6a947fa36cc24901e3d1b002",
+    "createdAt": "2026-09-12",
+    "coverLetter": "I'm excited to apply for this position. My background in JavaScript and hands-on project experience make me confident I can contribute right away to your team.",
+    "status": "pending"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c007",
+    "candidate": "6a947fa36cc24901e3d1a085",
+    "job": "6a947fa36cc24901e3d1b00c",
+    "createdAt": "2026-08-13",
+    "coverLetter": "This role caught my attention because of the emphasis on JavaScript, an area I've been actively developing. I'd welcome the chance to discuss how I could contribute.",
+    "status": "pending"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c008",
+    "candidate": "6a947fa36cc24901e3d1a089",
+    "job": "6a947fa36cc24901e3d1b005",
+    "createdAt": "2026-08-23",
+    "coverLetter": "With a solid foundation in CI/CD, I'm eager to bring my problem-solving approach and attention to detail to this position at GitLab.",
+    "status": "reviewed"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c009",
+    "candidate": "6a947fa36cc24901e3d1a085",
+    "job": "6a947fa36cc24901e3d1b00b",
+    "createdAt": "2026-08-28",
+    "coverLetter": "With a solid foundation in Express, I'm eager to bring my problem-solving approach and attention to detail to this position at Atlassian.",
+    "status": "rejected"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c010",
+    "candidate": "6a947fa36cc24901e3d1a085",
+    "job": "6a947fa36cc24901e3d1b007",
+    "createdAt": "2026-08-12",
+    "coverLetter": "I'm reaching out to apply for this role. I've built several projects using MongoDB and I'm looking for the next step to grow those skills in a professional setting.",
+    "status": "reviewed"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c011",
+    "candidate": "6a947fa36cc24901e3d1a087",
+    "job": "6a947fa36cc24901e3d1b006",
+    "createdAt": "2026-08-22",
+    "coverLetter": "I believe my experience and enthusiasm for CSS align well with what Revolut is looking for, and I'd love to bring that energy to your team.",
+    "status": "pending"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c012",
+    "candidate": "6a947fa36cc24901e3d1a089",
+    "job": "6a947fa36cc24901e3d1b00b",
+    "createdAt": "2026-09-06",
+    "coverLetter": "This role caught my attention because of the emphasis on Docker, an area I've been actively developing. I'd welcome the chance to discuss how I could contribute.",
+    "status": "reviewed"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c013",
+    "candidate": "6a947fa36cc24901e3d1a088",
+    "job": "6a947fa36cc24901e3d1b005",
+    "createdAt": "2026-08-27",
+    "coverLetter": "I've followed GitLab's work for a while and would love the opportunity to bring my Statistics skills to your team. I believe I'd be a strong fit for this role.",
+    "status": "reviewed"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c014",
+    "candidate": "6a947fa36cc24901e3d1a086",
+    "job": "6a947fa36cc24901e3d1b00e",
+    "createdAt": "2026-08-03",
+    "coverLetter": "With a solid foundation in React, I'm eager to bring my problem-solving approach and attention to detail to this position at GitLab.",
+    "status": "pending"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c015",
+    "candidate": "6a947fa36cc24901e3d1a089",
+    "job": "6a947fa36cc24901e3d1b00f",
+    "createdAt": "2026-09-13",
+    "coverLetter": "I've followed Thales Group's work for a while and would love the opportunity to bring my Linux skills to your team. I believe I'd be a strong fit for this role.",
+    "status": "reviewed"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c016",
+    "candidate": "6a947fa36cc24901e3d1a086",
+    "job": "6a947fa36cc24901e3d1b005",
+    "createdAt": "2026-09-18",
+    "coverLetter": "I've followed GitLab's work for a while and would love the opportunity to bring my JavaScript skills to your team. I believe I'd be a strong fit for this role.",
+    "status": "reviewed"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c017",
+    "candidate": "6a947fa36cc24901e3d1a08a",
+    "job": "6a947fa36cc24901e3d1b00a",
+    "createdAt": "2026-08-08",
+    "coverLetter": "This role caught my attention because of the emphasis on Prototyping, an area I've been actively developing. I'd welcome the chance to discuss how I could contribute.",
+    "status": "pending"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c018",
+    "candidate": "6a947fa36cc24901e3d1a089",
+    "job": "6a947fa36cc24901e3d1b008",
+    "createdAt": "2026-08-05",
+    "coverLetter": "I'm excited to apply for this position. My background in AWS and hands-on project experience make me confident I can contribute right away to your team.",
+    "status": "rejected"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c019",
+    "candidate": "6a947fa36cc24901e3d1a089",
+    "job": "6a947fa36cc24901e3d1b002",
+    "createdAt": "2026-09-15",
+    "coverLetter": "I'm reaching out to apply for this role. I've built several projects using Bash and I'm looking for the next step to grow those skills in a professional setting.",
+    "status": "reviewed"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c020",
+    "candidate": "6a947fa36cc24901e3d1a089",
+    "job": "6a947fa36cc24901e3d1b00e",
+    "createdAt": "2026-09-22",
+    "coverLetter": "I believe my experience and enthusiasm for AWS align well with what GitLab is looking for, and I'd love to bring that energy to your team.",
+    "status": "reviewed"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c021",
+    "candidate": "6a947fa36cc24901e3d1a08a",
+    "job": "6a947fa36cc24901e3d1b006",
+    "createdAt": "2026-08-15",
+    "coverLetter": "With a solid foundation in Figma, I'm eager to bring my problem-solving approach and attention to detail to this position at Revolut.",
+    "status": "pending"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c022",
+    "candidate": "6a947fa36cc24901e3d1a08a",
+    "job": "6a947fa36cc24901e3d1b00f",
+    "createdAt": "2026-08-17",
+    "coverLetter": "This role caught my attention because of the emphasis on Adobe XD, an area I've been actively developing. I'd welcome the chance to discuss how I could contribute.",
+    "status": "accepted"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c023",
+    "candidate": "6a947fa36cc24901e3d1a08a",
+    "job": "6a947fa36cc24901e3d1b005",
+    "createdAt": "2026-08-06",
+    "coverLetter": "I've followed GitLab's work for a while and would love the opportunity to bring my User Research skills to your team. I believe I'd be a strong fit for this role.",
+    "status": "pending"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c024",
+    "candidate": "6a947fa36cc24901e3d1a089",
+    "job": "6a947fa36cc24901e3d1b006",
+    "createdAt": "2026-09-12",
+    "coverLetter": "I'm excited to apply for this position. My background in Bash and hands-on project experience make me confident I can contribute right away to your team.",
+    "status": "pending"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c025",
+    "candidate": "6a947fa36cc24901e3d1a086",
+    "job": "6a947fa36cc24901e3d1b001",
+    "createdAt": "2026-09-03",
+    "coverLetter": "This role caught my attention because of the emphasis on JavaScript, an area I've been actively developing. I'd welcome the chance to discuss how I could contribute.",
+    "status": "rejected"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c026",
+    "candidate": "6a947fa36cc24901e3d1a085",
+    "job": "6a947fa36cc24901e3d1b00d",
+    "createdAt": "2026-08-16",
+    "coverLetter": "I've followed Shopify's work for a while and would love the opportunity to bring my Git skills to your team. I believe I'd be a strong fit for this role.",
+    "status": "pending"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c027",
+    "candidate": "6a947fa36cc24901e3d1a087",
+    "job": "6a947fa36cc24901e3d1b009",
+    "createdAt": "2026-08-18",
+    "coverLetter": "I'm reaching out to apply for this role. I've built several projects using MongoDB and I'm looking for the next step to grow those skills in a professional setting.",
+    "status": "rejected"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c028",
+    "candidate": "6a947fa36cc24901e3d1a088",
+    "job": "6a947fa36cc24901e3d1b00b",
+    "createdAt": "2026-08-15",
+    "coverLetter": "I'm reaching out to apply for this role. I've built several projects using Power BI and I'm looking for the next step to grow those skills in a professional setting.",
+    "status": "rejected"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c029",
+    "candidate": "6a947fa36cc24901e3d1a085",
+    "job": "6a947fa36cc24901e3d1b006",
+    "createdAt": "2026-08-19",
+    "coverLetter": "This role caught my attention because of the emphasis on Node.js, an area I've been actively developing. I'd welcome the chance to discuss how I could contribute.",
+    "status": "reviewed"
+  },
+  {
+    "_id": "6a947fa36cc24901e3d1c030",
+    "candidate": "6a947fa36cc24901e3d1a08a",
+    "job": "6a947fa36cc24901e3d1b00b",
+    "createdAt": "2026-09-02",
+    "coverLetter": "I've followed Atlassian's work for a while and would love the opportunity to bring my Figma skills to your team. I believe I'd be a strong fit for this role.",
+    "status": "pending"
+  }
+]
