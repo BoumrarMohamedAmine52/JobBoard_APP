@@ -10,12 +10,12 @@ const applicationSchema = new mongoose.Schema({
   },
   job: {
     type: mongoose.Schema.ObjectId,
-    ref: Job,
+    ref: "Job",
     required: [true, "the application must belong to a job."],
   },
   createdAt: {
     type: Date,
-    default: Date.now(),
+    default: Date.now,
   },
   coverLetter: {
     type: String,

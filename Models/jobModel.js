@@ -3,7 +3,7 @@ const User = require("./userModel");
 
 const jobSchema = new mongoose.Schema(
   {
-    job: {
+    title: {
       type: String,
       required: [true, "the job posting must have a title"],
       trim: true,
