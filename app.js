@@ -13,4 +13,11 @@ app.get("/", (req, res) => {
   });
 });
 
+app.all("*", (req, res, next) => {
+  res.status(404).json({
+    status: "fail",
+    message: `can't find URl : ${req.originalUrl}`,
+  });
+});
+
 module.exports = app;
