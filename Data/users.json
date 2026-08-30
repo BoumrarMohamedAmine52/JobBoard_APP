@@ -1,0 +1,259 @@
+[
+  {
+    "fullName": "Thalen Corwick",
+    "email": "thalen.corwick@stripe.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+353 87 123 4567",
+    "location": "Dublin, Ireland",
+    "role": "employer",
+    "company": "Stripe",
+    "profilePicture": "user1.png",
+    "active": true
+  },
+  {
+    "fullName": "Miren Ashvale",
+    "email": "miren.ashvale@spotify.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+46 70 123 4567",
+    "location": "Stockholm, Sweden",
+    "role": "employer",
+    "company": "Spotify",
+    "profilePicture": "user2.png",
+    "active": true
+  },
+  {
+    "fullName": "Devrin Okalu",
+    "email": "devrin.okalu@booking.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+31 6 1234 5678",
+    "location": "Amsterdam, Netherlands",
+    "role": "employer",
+    "company": "Booking.com",
+    "profilePicture": "user3.png",
+    "active": true
+  },
+  {
+    "fullName": "Sable Rennick",
+    "email": "sable.rennick@shopify.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+1 512 555 0142",
+    "location": "Austin, Texas, USA",
+    "role": "employer",
+    "company": "Shopify",
+    "profilePicture": "user4.png",
+    "active": true
+  },
+  {
+    "fullName": "Corin Vessalt",
+    "email": "corin.vessalt@gitlab.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+1 415 555 0198",
+    "location": "Remote",
+    "role": "employer",
+    "company": "GitLab",
+    "profilePicture": "user5.png",
+    "active": true
+  },
+  {
+    "fullName": "Yselle Kantor",
+    "email": "yselle.kantor@revolut.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+44 7700 900123",
+    "location": "London, United Kingdom",
+    "role": "employer",
+    "company": "Revolut",
+    "profilePicture": "user6.png",
+    "active": true
+  },
+  {
+    "fullName": "Bramwell Ostrey",
+    "email": "bramwell.ostrey@ibm.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+1 914 555 0176",
+    "location": "New York, USA",
+    "role": "employer",
+    "company": "IBM",
+    "profilePicture": "user7.png",
+    "active": true
+  },
+  {
+    "fullName": "Perrin Fenholt",
+    "email": "perrin.fenholt@zendesk.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+351 91 234 5678",
+    "location": "Lisbon, Portugal",
+    "role": "employer",
+    "company": "Zendesk",
+    "profilePicture": "user8.png",
+    "active": true
+  },
+  {
+    "fullName": "Sarien Voltaix",
+    "email": "sarien.voltaix@mailbox.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+213 550 12 34 56",
+    "location": "Algiers, Algeria",
+    "CandidateProfile": {
+      "workExperience": [
+        {
+          "jobTitle": "Backend Developer Intern",
+          "companyName": "Northwind Digital",
+          "dates": "March 2025 - September 2025"
+        }
+      ],
+      "coreSkills": ["Node.js", "Express", "MongoDB", "JavaScript", "Git"],
+      "education": [
+        "Master's Degree in Big Data Analytics",
+        "Bachelor's Degree in Operational Research"
+      ],
+      "portfolioLinks": [
+        "https://github.com/sarienvoltaix",
+        "https://linkedin.com/in/sarien-voltaix"
+      ]
+    },
+    "role": "candidate",
+    "profilePicture": "user9.png",
+    "active": true
+  },
+  {
+    "fullName": "Marlow Q. Dennett",
+    "email": "marlow.dennett@mailbox.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+213 662 33 21 09",
+    "location": "Béjaïa, Algeria",
+    "CandidateProfile": {
+      "workExperience": [
+        {
+          "jobTitle": "Frontend Developer",
+          "companyName": "Webnest Studio",
+          "dates": "January 2024 - Present"
+        },
+        {
+          "jobTitle": "Freelance Web Developer",
+          "companyName": "Self-employed",
+          "dates": "June 2022 - December 2023"
+        }
+      ],
+      "coreSkills": ["React", "JavaScript", "CSS", "Tailwind CSS", "Figma"],
+      "education": [
+        "Bachelor's Degree in Computer Science"
+      ],
+      "portfolioLinks": [
+        "https://marlowdennett.dev",
+        "https://github.com/marlowdennett"
+      ]
+    },
+    "role": "candidate",
+    "profilePicture": "user10.png",
+    "active": true
+  },
+  {
+    "fullName": "Wrenna Silt",
+    "email": "wrenna.silt@mailbox.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+213 795 60 40 20",
+    "location": "Djelfa, Algeria",
+    "CandidateProfile": {
+      "workExperience": [],
+      "coreSkills": ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "Express"],
+      "education": [
+        "Master's Degree in Big Data Analytics",
+        "Bachelor's Degree in Operational Research"
+      ],
+      "portfolioLinks": [
+        "https://github.com/wrennasilt"
+      ]
+    },
+    "role": "candidate",
+    "profilePicture": "user11.png",
+    "active": true
+  },
+  {
+    "fullName": "Osric Vantry",
+    "email": "osric.vantry@mailbox.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+213 673 15 90 44",
+    "location": "Setif, Algeria",
+    "CandidateProfile": {
+      "workExperience": [
+        {
+          "jobTitle": "Data Analyst",
+          "companyName": "Fieldstone Consulting",
+          "dates": "September 2023 - Present"
+        }
+      ],
+      "coreSkills": ["SQL", "Python", "Power BI", "Excel", "Statistics"],
+      "education": [
+        "Master's Degree in Statistics and Data Science"
+      ],
+      "portfolioLinks": [
+        "https://linkedin.com/in/osric-vantry",
+        "https://github.com/osricvantry"
+      ]
+    },
+    "role": "candidate",
+    "profilePicture": "user12.png",
+    "active": true
+  },
+  {
+    "fullName": "Isolde Marrow",
+    "email": "isolde.marrow@mailbox.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+213 698 27 63 11",
+    "location": "Blida, Algeria",
+    "CandidateProfile": {
+      "workExperience": [
+        {
+          "jobTitle": "DevOps Intern",
+          "companyName": "Ridgeline Systems",
+          "dates": "July 2024 - January 2025"
+        }
+      ],
+      "coreSkills": ["AWS", "Docker", "Linux", "Bash", "CI/CD"],
+      "education": [
+        "Bachelor's Degree in Computer Engineering"
+      ],
+      "portfolioLinks": [
+        "https://github.com/isoldemarrow"
+      ]
+    },
+    "role": "candidate",
+    "profilePicture": "user13.png",
+    "active": true
+  },
+  {
+    "fullName": "Callix Rovane",
+    "email": "callix.rovane@mailbox.com",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "phoneNumber": "+213 556 44 12 88",
+    "location": "Annaba, Algeria",
+    "CandidateProfile": {
+      "workExperience": [],
+      "coreSkills": ["Figma", "User Research", "Adobe XD", "Prototyping"],
+      "education": [
+        "Bachelor's Degree in Digital Design"
+      ],
+      "portfolioLinks": [
+        "https://behance.net/callixrovane",
+        "https://callixrovane.design"
+      ]
+    },
+    "role": "candidate",
+    "profilePicture": "user14.png",
+    "active": true
+  }
+]

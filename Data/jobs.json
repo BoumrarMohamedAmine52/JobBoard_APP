@@ -1,0 +1,363 @@
+[
+  {
+    "title": "Backend Developer (Node.js)",
+    "location": "Dublin, Ireland",
+    "type": "full-time",
+    "company": "Stripe",
+    "roleSummary": "We're looking for a Backend Developer to build and maintain scalable APIs for our payments platform, working closely with our product and infrastructure teams.",
+    "keyResponsibilities": [
+      "Design and implement RESTful APIs using Node.js and Express",
+      "Write efficient MongoDB queries and manage database schemas",
+      "Collaborate with frontend developers to integrate APIs",
+      "Write unit and integration tests for backend services",
+      "Participate in code reviews and maintain coding standards"
+    ],
+    "qualifications": [
+      "Bachelor's degree in Computer Science or related field",
+      "2+ years of professional backend development experience"
+    ],
+    "skills": ["Node.js", "Express", "MongoDB", "REST APIs", "Git", "Docker"],
+    "salaryMin": 90000,
+    "salaryMax": 140000,
+    "benefits": ["Health insurance", "Remote work flexibility", "Annual training budget", "Stock options"],
+    "applyingMethod": ["careers@stripe.com", "https://stripe.com/jobs"],
+    "jobStatus": "open",
+    "applicationDeadline": "2026-10-15"
+  },
+  {
+    "title": "Frontend Developer (React)",
+    "location": "Remote",
+    "type": "remote",
+    "company": "Spotify",
+    "roleSummary": "Spotify is hiring a Frontend Developer to help build features for our creator tools dashboard used by millions of artists and podcasters.",
+    "keyResponsibilities": [
+      "Build responsive, accessible UI components in React",
+      "Work with designers to translate Figma mockups into code",
+      "Optimize application performance and loading times",
+      "Maintain our internal component library"
+    ],
+    "qualifications": [
+      "1+ years of experience with React or a similar framework",
+      "Strong understanding of HTML, CSS, and modern JavaScript"
+    ],
+    "skills": ["React", "JavaScript", "Tailwind CSS", "Redux", "Figma"],
+    "salaryMin": 70000,
+    "salaryMax": 110000,
+    "benefits": ["Fully remote", "Flexible hours", "Home office stipend"],
+    "applyingMethod": ["https://spotifyjobs.com/frontend-dev"],
+    "jobStatus": "open",
+    "applicationDeadline": "2026-09-30"
+  },
+  {
+    "title": "Data Analyst",
+    "location": "Amsterdam, Netherlands",
+    "type": "full-time",
+    "company": "Booking.com",
+    "roleSummary": "Join our operations team to turn travel and booking data into actionable insights that drive efficiency across our global platform.",
+    "keyResponsibilities": [
+      "Build and maintain dashboards using SQL and Power BI",
+      "Analyze booking trends and customer behavior data",
+      "Prepare weekly and monthly reports for operations managers",
+      "Identify trends and flag anomalies in booking data"
+    ],
+    "qualifications": [
+      "Bachelor's or Master's degree in Statistics, Data Science, Operational Research, or related field",
+      "Comfortable working with large datasets"
+    ],
+    "skills": ["SQL", "Power BI", "Excel", "Python", "Data Visualization"],
+    "salaryMin": 75000,
+    "salaryMax": 100000,
+    "benefits": ["Health insurance", "Relocation assistance", "Performance bonus"],
+    "applyingMethod": ["hr@booking.com", "https://careers.booking.com"],
+    "jobStatus": "open",
+    "applicationDeadline": "2026-10-01"
+  },
+  {
+    "title": "Junior Web Developer",
+    "location": "Austin, Texas, USA",
+    "type": "part-time",
+    "company": "Shopify",
+    "roleSummary": "Shopify is looking for a Junior Web Developer to help build storefront themes and tools for merchants under the guidance of our senior devs.",
+    "keyResponsibilities": [
+      "Build and maintain storefront themes using HTML, CSS, and JavaScript",
+      "Assist senior developers with Liquid template customizations",
+      "Fix bugs reported by merchants and QA",
+      "Attend weekly team stand-ups"
+    ],
+    "qualifications": [
+      "Currently studying or recently graduated in a related field",
+      "A portfolio of at least 2-3 personal or academic projects"
+    ],
+    "skills": ["HTML", "CSS", "JavaScript", "Liquid", "Git"],
+    "salaryMin": 35000,
+    "salaryMax": 50000,
+    "benefits": ["Flexible schedule", "Mentorship from senior developers"],
+    "applyingMethod": ["jobs@shopify.com"],
+    "jobStatus": "open",
+    "applicationDeadline": "2026-09-20"
+  },
+  {
+    "title": "DevOps Engineer",
+    "location": "Remote",
+    "type": "remote",
+    "company": "GitLab",
+    "roleSummary": "GitLab is looking for a DevOps Engineer to own parts of our CI/CD pipelines and cloud infrastructure as we scale our platform.",
+    "keyResponsibilities": [
+      "Manage and improve CI/CD pipelines using GitLab CI",
+      "Maintain AWS infrastructure using Terraform",
+      "Monitor system performance and respond to incidents",
+      "Automate deployment and scaling processes"
+    ],
+    "qualifications": [
+      "3+ years of experience in a DevOps or SRE role",
+      "Experience with AWS or another major cloud provider"
+    ],
+    "skills": ["AWS", "Docker", "Kubernetes", "Terraform", "CI/CD", "Linux"],
+    "salaryMin": 130000,
+    "salaryMax": 180000,
+    "benefits": ["Fully remote", "Health insurance", "Stock options", "Unlimited PTO"],
+    "applyingMethod": ["https://about.gitlab.com/jobs/devops-engineer"],
+    "jobStatus": "open",
+    "applicationDeadline": "2026-11-01"
+  },
+  {
+    "title": "UI/UX Designer",
+    "location": "London, United Kingdom",
+    "type": "full-time",
+    "company": "Revolut",
+    "roleSummary": "We're looking for a UI/UX Designer to shape the user experience of our fintech products, from early wireframes to polished, tested interfaces.",
+    "keyResponsibilities": [
+      "Conduct user research and usability testing",
+      "Create wireframes, prototypes, and high-fidelity designs in Figma",
+      "Collaborate closely with product managers and developers",
+      "Maintain and evolve our design system"
+    ],
+    "qualifications": [
+      "3+ years of experience in UI/UX design",
+      "A strong portfolio demonstrating end-to-end design process"
+    ],
+    "skills": ["Figma", "User Research", "Prototyping", "Design Systems"],
+    "salaryMin": 95000,
+    "salaryMax": 130000,
+    "benefits": ["Health insurance", "Remote work flexibility", "Annual training budget"],
+    "applyingMethod": ["careers@revolut.com"],
+    "jobStatus": "paused",
+    "applicationDeadline": "2026-12-01"
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "location": "Remote",
+    "type": "contract",
+    "company": "IBM",
+    "roleSummary": "IBM is seeking a Machine Learning Engineer for a 6-month contract to help develop a demand forecasting model for retail clients.",
+    "keyResponsibilities": [
+      "Build and evaluate forecasting models using historical sales data",
+      "Deploy models into a production pipeline",
+      "Collaborate with data engineers on feature pipelines",
+      "Document model performance and limitations"
+    ],
+    "qualifications": [
+      "Master's degree in Data Science, Statistics, or related field",
+      "Proven experience deploying ML models to production"
+    ],
+    "skills": ["Python", "Scikit-learn", "TensorFlow", "Pandas", "SQL"],
+    "salaryMin": 150000,
+    "salaryMax": 200000,
+    "benefits": ["Fully remote", "Flexible contract terms"],
+    "applyingMethod": ["talent@ibm.com", "https://ibm.com/careers"],
+    "jobStatus": "open",
+    "applicationDeadline": "2026-09-25"
+  },
+  {
+    "title": "Customer Support Specialist",
+    "location": "Lisbon, Portugal",
+    "type": "full-time",
+    "company": "Zendesk",
+    "roleSummary": "We're expanding our support team to help our growing base of SaaS customers get the most out of our platform.",
+    "keyResponsibilities": [
+      "Respond to customer inquiries via email and live chat",
+      "Troubleshoot common product issues and escalate when needed",
+      "Maintain and update our help center documentation",
+      "Gather customer feedback for the product team"
+    ],
+    "qualifications": [
+      "Excellent written communication skills in English",
+      "Prior customer support experience is a plus"
+    ],
+    "skills": ["Customer Support", "Zendesk", "Communication", "Problem Solving"],
+    "salaryMin": 45000,
+    "salaryMax": 60000,
+    "benefits": ["Health insurance", "Performance bonus"],
+    "applyingMethod": ["hr@zendesk.com"],
+    "jobStatus": "closed",
+    "applicationDeadline": "2026-08-15"
+  },
+  {
+    "title": "Full Stack Developer (MERN)",
+    "location": "Berlin, Germany",
+    "type": "full-time",
+    "company": "Delivery Hero",
+    "roleSummary": "We're looking for a Full Stack Developer to help build and scale the platform connecting millions of customers with local restaurants and stores.",
+    "keyResponsibilities": [
+      "Develop features across the stack using React, Node.js, and MongoDB",
+      "Write clean, well-tested, and maintainable code",
+      "Collaborate with product managers to scope new features",
+      "Participate in on-call rotation for production support"
+    ],
+    "qualifications": [
+      "Bachelor's degree in Computer Science or equivalent experience",
+      "2+ years of experience with the MERN stack"
+    ],
+    "skills": ["MongoDB", "Express", "React", "Node.js", "TypeScript"],
+    "salaryMin": 85000,
+    "salaryMax": 125000,
+    "benefits": ["Relocation assistance", "Health insurance", "Language classes", "Gym membership"],
+    "applyingMethod": ["careers@deliveryhero.com", "https://careers.deliveryhero.com"],
+    "jobStatus": "open",
+    "applicationDeadline": "2026-10-20"
+  },
+  {
+    "title": "Cloud Solutions Architect",
+    "location": "Seattle, Washington, USA",
+    "type": "full-time",
+    "company": "Microsoft",
+    "roleSummary": "Microsoft is seeking a Cloud Solutions Architect to help enterprise customers design and implement scalable solutions on Azure.",
+    "keyResponsibilities": [
+      "Design cloud architecture solutions tailored to customer needs",
+      "Lead technical workshops and proof-of-concept engagements",
+      "Collaborate with sales and engineering teams on proposals",
+      "Stay current with Azure services and best practices"
+    ],
+    "qualifications": [
+      "5+ years of experience in cloud architecture or infrastructure roles",
+      "Azure certifications preferred"
+    ],
+    "skills": ["Azure", "Cloud Architecture", "Networking", "Security", "PowerShell"],
+    "salaryMin": 160000,
+    "salaryMax": 210000,
+    "benefits": ["Health insurance", "401k matching", "Stock options", "Generous PTO"],
+    "applyingMethod": ["https://careers.microsoft.com/cloud-solutions-architect"],
+    "jobStatus": "open",
+    "applicationDeadline": "2026-11-10"
+  },
+  {
+    "title": "QA Automation Engineer",
+    "location": "Remote",
+    "type": "remote",
+    "company": "Atlassian",
+    "roleSummary": "Atlassian is looking for a QA Automation Engineer to help maintain and expand our automated test suites across several core products.",
+    "keyResponsibilities": [
+      "Design and maintain automated test suites using Selenium and Cypress",
+      "Work with developers to identify testable requirements",
+      "Investigate and report bugs with clear reproduction steps",
+      "Improve CI pipeline test reliability and speed"
+    ],
+    "qualifications": [
+      "2+ years of experience in QA automation",
+      "Familiarity with CI/CD pipelines"
+    ],
+    "skills": ["Selenium", "Cypress", "JavaScript", "CI/CD", "Test Planning"],
+    "salaryMin": 80000,
+    "salaryMax": 115000,
+    "benefits": ["Fully remote", "Health insurance", "Annual wellness stipend"],
+    "applyingMethod": ["https://www.atlassian.com/company/careers/qa-automation"],
+    "jobStatus": "open",
+    "applicationDeadline": "2026-10-05"
+  },
+  {
+    "title": "Product Manager, Growth",
+    "location": "San Francisco, California, USA",
+    "type": "full-time",
+    "company": "Airbnb",
+    "roleSummary": "We're looking for a Growth Product Manager to identify and execute on opportunities that drive user acquisition and retention.",
+    "keyResponsibilities": [
+      "Define and prioritize the growth product roadmap",
+      "Run A/B tests and analyze results to guide decisions",
+      "Partner with engineering, design, and marketing teams",
+      "Present findings and recommendations to leadership"
+    ],
+    "qualifications": [
+      "4+ years of product management experience, ideally in growth",
+      "Strong analytical and experimentation background"
+    ],
+    "skills": ["Product Strategy", "A/B Testing", "SQL", "Data Analysis", "Roadmapping"],
+    "salaryMin": 140000,
+    "salaryMax": 190000,
+    "benefits": ["Health insurance", "Annual travel credit", "Stock options"],
+    "applyingMethod": ["https://careers.airbnb.com/positions/growth-pm"],
+    "jobStatus": "open",
+    "applicationDeadline": "2026-10-30"
+  },
+  {
+    "title": "Mobile Developer (Flutter)",
+    "location": "Toronto, Canada",
+    "type": "contract",
+    "company": "Shopify",
+    "roleSummary": "Shopify is hiring a contract Mobile Developer to help build new features for our merchant-facing mobile app.",
+    "keyResponsibilities": [
+      "Build and maintain features in our Flutter-based mobile app",
+      "Work closely with designers to implement polished UI",
+      "Write automated tests for new features",
+      "Fix bugs and improve app performance"
+    ],
+    "qualifications": [
+      "2+ years of experience building mobile apps with Flutter",
+      "Experience publishing apps to the App Store and Google Play"
+    ],
+    "skills": ["Flutter", "Dart", "Mobile Development", "REST APIs", "Git"],
+    "salaryMin": 90000,
+    "salaryMax": 130000,
+    "benefits": ["Flexible contract terms", "Remote-friendly"],
+    "applyingMethod": ["jobs@shopify.com"],
+    "jobStatus": "open",
+    "applicationDeadline": "2026-09-28"
+  },
+  {
+    "title": "Technical Writer",
+    "location": "Remote",
+    "type": "part-time",
+    "company": "GitLab",
+    "roleSummary": "GitLab is looking for a part-time Technical Writer to help improve our developer documentation and onboarding guides.",
+    "keyResponsibilities": [
+      "Write and edit clear, concise technical documentation",
+      "Work with engineers to understand new features",
+      "Maintain consistency across the documentation site",
+      "Review documentation pull requests from the community"
+    ],
+    "qualifications": [
+      "Experience writing technical documentation for developers",
+      "Comfortable working with Markdown and Git"
+    ],
+    "skills": ["Technical Writing", "Markdown", "Git", "Documentation Tools"],
+    "salaryMin": 40000,
+    "salaryMax": 60000,
+    "benefits": ["Fully remote", "Flexible hours"],
+    "applyingMethod": ["https://about.gitlab.com/jobs/technical-writer"],
+    "jobStatus": "open",
+    "applicationDeadline": "2026-09-22"
+  },
+  {
+    "title": "Cybersecurity Analyst",
+    "location": "Paris, France",
+    "type": "full-time",
+    "company": "Thales Group",
+    "roleSummary": "Thales is looking for a Cybersecurity Analyst to help monitor, detect, and respond to security threats across our enterprise systems.",
+    "keyResponsibilities": [
+      "Monitor security alerts and investigate potential incidents",
+      "Conduct vulnerability assessments and recommend remediations",
+      "Maintain and improve security monitoring tools",
+      "Support compliance audits and reporting"
+    ],
+    "qualifications": [
+      "Bachelor's degree in Cybersecurity, Computer Science, or related field",
+      "2+ years of experience in a security operations role"
+    ],
+    "skills": ["Security Monitoring", "SIEM Tools", "Incident Response", "Networking"],
+    "salaryMin": 70000,
+    "salaryMax": 105000,
+    "benefits": ["Health insurance", "Relocation assistance", "Annual training budget"],
+    "applyingMethod": ["careers@thalesgroup.com"],
+    "jobStatus": "open",
+    "applicationDeadline": "2026-10-12"
+  }
+]
