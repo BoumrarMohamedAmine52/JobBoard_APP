@@ -56,3 +56,11 @@ exports.addJob = async (req, res, next) => {
     next(error);
   }
 };
+
+// exports.updateJob = async (req, res, next) => {
+
+// }
+
+// exports.deleteJob = async (req, res, next) => {
+
+// }

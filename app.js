@@ -8,6 +8,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 const JobRouter = require("./Routes/jobRoutes");
+const userRouter = require("./Routes/userRoutes");
 
 // app.get("/", (req, res) => {
 //   res.status(200).json({
@@ -19,6 +20,7 @@ const JobRouter = require("./Routes/jobRoutes");
 // });
 
 app.use("/api/jb1/jobs", JobRouter);
+app.use("/api/jb1/users", userRouter);
 
 app.all("*", (req, res, next) => {
   res.status(404).json({
@@ -28,7 +30,7 @@ app.all("*", (req, res, next) => {
 });
 
 app.use((err, req, res, next) => {
-  console.error("Logged via custom handler:", err.stack);
+  //console.error("Logged via custom handler:", err.stack);
 
   res.status(err.status || 500).json({
     success: false,
