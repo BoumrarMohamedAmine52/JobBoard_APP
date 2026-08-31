@@ -33,7 +33,6 @@ const userSchema = new mongoose.Schema({
   },
   phoneNumber: {
     type: String,
-    //validator : [validator.isMobilePhone, "Please provide a valide phone number"]
   },
   location: {
     type: String,
@@ -65,9 +64,19 @@ const userSchema = new mongoose.Schema({
     default: "candidate",
   },
   profilePicture: { type: String },
+  passwordChangedDate: {
+    type: Date,
+  },
+  resetToken: {
+    type: String,
+  },
+  expiredresetTokenDate: {
+    type: Date,
+  },
   active: {
     type: Boolean,
     default: true,
+    select: false,
   },
   company: {
     type: String,
@@ -75,13 +84,13 @@ const userSchema = new mongoose.Schema({
 });
 
 userSchema.pre("save", async function (next) {
-  if (!this.isModified("password")) return next();
+  if (!this.isModified("password")) return;
 
   this.password = await bcrypt.hash(this.password, 10);
 
   this.passwordConfirm = undefined;
 
-  next();
+  //next();
 });
 
 const User = mongoose.model("User", userSchema);
