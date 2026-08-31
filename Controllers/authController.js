@@ -24,3 +24,30 @@ exports.signUp = async (req, res, next) => {
     next(error);
   }
 };
+
+exports.logIn = async (req, res, next) => {
+  try {
+    const { email, password } = req.body;
+
+    if (!email || !password) {
+      return next(new Error("Please provide email and password"));
+    }
+
+    const user = await User.findOne({ email });
+
+    if (!user || !(await user.correctPassword(password, user.password))) {
+      return next(new Error("wrong email or password"));
+    }
+
+    const token = signToken(user.id);
+    res.status(201).json({
+      status: "Success",
+      token,
+      data: {
+        user,
+      },
+    });
+  } catch (error) {
+    next(error);
+  }
+};
