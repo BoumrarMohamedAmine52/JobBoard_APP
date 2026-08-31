@@ -27,4 +27,14 @@ app.all("*", (req, res, next) => {
   });
 });
 
+app.use((err, req, res, next) => {
+  console.error("Logged via custom handler:", err.stack);
+
+  res.status(err.status || 500).json({
+    success: false,
+    message: err.message || "Internal Server Error",
+    error: err.stack,
+  });
+});
+
 module.exports = app;
