@@ -7,14 +7,18 @@ app.use(express.json());
 
 app.use(morgan("dev"));
 
-app.get("/", (req, res) => {
-  res.status(200).json({
-    status: "Sucess",
-    data: {
-      message: "hello from the / route.",
-    },
-  });
-});
+const JobRouter = require("./Routes/jobRoutes");
+
+// app.get("/", (req, res) => {
+//   res.status(200).json({
+//     status: "Sucess",
+//     data: {
+//       message: "hello from the / route.",
+//     },
+//   });
+// });
+
+app.use("/api/jb1/jobs", JobRouter);
 
 app.all("*", (req, res, next) => {
   res.status(404).json({

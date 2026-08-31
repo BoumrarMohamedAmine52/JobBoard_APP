@@ -83,8 +83,14 @@ const userSchema = new mongoose.Schema({
   },
 });
 
+// Pattern A: async, no next() call needed at all
+// the next() become optional in async function .
+//Since Mongoose 5+, when you pass an async function to pre('save', ...),
+// Mongoose is smart enough to recognize it as an async function and waits for the returned Promise to resolve —
+// completion is signaled automatically when the function finishes running, not by calling next().
+// Calling next() becomes optional, not required.
 userSchema.pre("save", async function (next) {
-  if (!this.isModified("password")) return;
+  if (!this.isModified("password")) return; //next();
 
   this.password = await bcrypt.hash(this.password, 10);
 
