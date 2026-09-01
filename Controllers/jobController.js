@@ -36,12 +36,14 @@ exports.getJob = async (req, res, next) => {
 
 exports.addJob = async (req, res, next) => {
   try {
-    // check if the user posting the job offer is an demployer and not a candidtae
-    const user = await User.findById(req.body.postedBy);
+    // check if the user posting the job offer is an employer and not a candidtae
+    //const user = await User.findById(req.body.postedBy);
 
-    if (user.role !== "employer") {
-      return next(new Error("the job must be posted only by an employer"));
-    }
+    // if (user.role !== "employer") {
+    //   return next(new Error("the job must be posted only by an employer"));
+    // }
+
+    req.body.postedBy = req.user.id;
 
     // save the new job in the db
     const newJob = await Job.create(req.body);
