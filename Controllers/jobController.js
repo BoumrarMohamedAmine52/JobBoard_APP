@@ -59,10 +59,42 @@ exports.addJob = async (req, res, next) => {
   }
 };
 
-// exports.updateJob = async (req, res, next) => {
+exports.updateJob = async (req, res, next) => {
+  try {
+    const updatedJob = await Job.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true,
+    });
 
-// }
+    if (!updatedJob) {
+      return next(new Error("No job found with that id."));
+    }
+    res.status(200).json({
+      status: "Success",
+      data: {
+        updatedJob,
+      },
+    });
+  } catch (error) {
+    next(error);
+  }
+};
 
-// exports.deleteJob = async (req, res, next) => {
+exports.deleteJob = async (req, res, next) => {
+  try {
+    const deletedJob = await Job.findByIdAndDelete(req.params.id);
 
-// }
+    if (!deletedJob) {
+      return next(new Error("No job found with that id."));
+    }
+
+    res.status(204).json({
+      status: "Success",
+      data: {
+        deletedJob,
+      },
+    });
+  } catch (error) {
+    next(error);
+  }
+};

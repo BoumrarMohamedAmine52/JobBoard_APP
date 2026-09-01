@@ -1,4 +1,5 @@
 const User = require("../Models/userModel");
+const Job = require("../Models/jobModel");
 const jwt = require("jsonwebtoken");
 const { promisify } = require("util");
 
@@ -95,7 +96,7 @@ exports.protect = async (req, res, next) => {
 
     // grant access to the protected route.
     req.user = currentUser;
-    //console.log(req.user);
+    console.log(req.user);
     next();
   } catch (error) {
     next(error);
@@ -111,4 +112,28 @@ exports.givePermissionTo = (...roles) => {
     }
     next();
   };
+};
+
+exports.restrictToOwnerOnly = async (req, res, next) => {
+  try {
+    const job = await Job.findById(req.params.id);
+
+    if (!job) {
+      return next(new Error("No job found with that id"));
+    }
+
+    console.log(req.user.id);
+    console.log("ids : ", job.postedBy !== req.user.id);
+    if (job.postedBy.toString() !== req.user.id) {
+      return next(
+        new Error(
+          "Only the user who posted this document can perform this action",
+        ),
+      );
+    }
+
+    next();
+  } catch (error) {
+    next(error);
+  }
 };

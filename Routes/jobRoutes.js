@@ -13,7 +13,19 @@ Router.route("/")
     jobControllers.addJob,
   );
 
-Router.route("/:id").get(jobControllers.getJob);
-//.delete(jobControllers.deleteJob);
+Router.route("/:id")
+  .get(jobControllers.getJob)
+  .patch(
+    authControllers.protect,
+    authControllers.givePermissionTo("employer"),
+    authControllers.restrictToOwnerOnly,
+    jobControllers.updateJob,
+  )
+  .delete(
+    authControllers.protect,
+    authControllers.givePermissionTo("employer"),
+    authControllers.restrictToOwnerOnly,
+    jobControllers.deleteJob,
+  );
 
 module.exports = Router;
