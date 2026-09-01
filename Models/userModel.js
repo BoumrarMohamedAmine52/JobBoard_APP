@@ -105,6 +105,21 @@ userSchema.methods.correctPassword = async function (
 ) {
   return bcrypt.compare(candidatePassword, userPassword);
 };
+
+userSchema.methods.passwordChanged = function (JWTtimestamp) {
+  if (this.passwordChangedDate) {
+    // devide by 1000 because JWTtimestamp or token iat is in seconds
+    // and not in millseconds .
+    const passwordChangedDateTimestamp = parseInt(
+      this.passwordChangedDate.getTime() / 1000,
+      10,
+    );
+    return passwordChangedDateTimestamp > JWTtimestamp;
+  }
+
+  return false;
+};
+
 const User = mongoose.model("User", userSchema);
 
 module.exports = User;
