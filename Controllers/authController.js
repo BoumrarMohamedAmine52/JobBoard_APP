@@ -60,7 +60,7 @@ exports.protect = async (req, res, next) => {
     //1 . get the token and check if it's there.
     let token;
 
-    console.log(req.headers.authorization);
+    //console.log(req.headers.authorization);
     if (
       req.headers.authorization &&
       req.headers.authorization.startsWith("Bearer")
@@ -68,7 +68,7 @@ exports.protect = async (req, res, next) => {
       token = req.headers.authorization.split(" ")[1];
     }
 
-    console.log("token : ", token);
+    //console.log("token : ", token);
     if (!token) {
       return next(
         new Error("u are not loged in , please log in to get access."),
@@ -78,7 +78,7 @@ exports.protect = async (req, res, next) => {
     // 2. verify the token
     const decode = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
 
-    console.log(decode);
+    //console.log(decode);
     // 3. verifie if the user still exists.
     const currentUser = await User.findById(decode.id);
 
@@ -97,7 +97,7 @@ exports.protect = async (req, res, next) => {
 
     // grant access to the protected route.
     req.user = currentUser;
-    console.log(req.user);
+    //console.log(req.user);
     req.user.id = currentUser._id.toString();
     next();
   } catch (error) {
@@ -121,8 +121,10 @@ exports.restrictToOwnerOnly = (Model) => {
     try {
       const doc = await Model.findById(req.params.id);
 
+      //console.log({ ...Model });
+      //console.log(Model.modelName);
       if (!doc) {
-        return next(new Error("No document found with that id"));
+        return next(new Error(`${Model.modelName} with that id do not exist.`));
       }
 
       console.log(req.user._id);

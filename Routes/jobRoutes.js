@@ -11,6 +11,7 @@ Router.route("/")
   .post(
     authControllers.protect,
     authControllers.givePermissionTo("employer"),
+    jobControllers.setpostedBy,
     jobControllers.addJob,
   );
 

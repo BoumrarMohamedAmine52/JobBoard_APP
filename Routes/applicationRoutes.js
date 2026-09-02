@@ -5,6 +5,7 @@ const Router = express.Router();
 const applicationControllers = require("../Controllers/applicationController");
 const authControllers = require("../Controllers/authController");
 const Application = require("../Models/applicationModel");
+const Job = require("../Models/jobModel");
 
 Router.route("/")
   .get(applicationControllers.getApplications)
@@ -23,7 +24,6 @@ Router.route("/myApplications").get(
 
 Router.route("/:id")
   .get(applicationControllers.getApplication)
-
   .patch(
     authControllers.protect,
     authControllers.givePermissionTo("candidate"),
@@ -36,5 +36,12 @@ Router.route("/:id")
     authControllers.restrictToOwnerOnly(Application),
     applicationControllers.deleteMyApplication,
   );
+
+Router.route("/getJobApplications/:id").get(
+  authControllers.protect,
+  authControllers.givePermissionTo("employer"),
+  authControllers.restrictToOwnerOnly(Job),
+  applicationControllers.getJobApplications,
+);
 
 module.exports = Router;

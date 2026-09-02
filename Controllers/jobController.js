@@ -108,3 +108,9 @@ exports.myJobs = async (req, res, next) => {
     next(error);
   }
 };
+
+exports.setpostedBy = (req, res, next) => {
+  if (!req.body.postedBy) req.body.postedBy = req.user.id;
+
+  next();
+};

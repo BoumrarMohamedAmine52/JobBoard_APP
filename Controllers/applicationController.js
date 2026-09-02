@@ -98,6 +98,25 @@ exports.deleteMyApplication = async (req, res, next) => {
   }
 };
 
+exports.getJobApplications = async (req, res, next) => {
+  try {
+    const jobApplications = await Application.find({ job: req.params.id });
+
+    if (!jobApplications) {
+      return next(new Error("No candidate applied for this job yet."));
+    }
+
+    res.status(200).json({
+      status: "Success",
+      data: {
+        jobApplications,
+      },
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
 exports.setJobCandidateID = (req, res, next) => {
   if (!req.body.job) req.body.job = req.params.id;
   if (!req.body.candidate) req.body.candidate = req.user.id;
