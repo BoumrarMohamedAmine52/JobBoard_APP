@@ -1,5 +1,6 @@
 const User = require("../Models/userModel");
 const Job = require("../Models/jobModel");
+const Application = require("../Models/applicationModel");
 const jwt = require("jsonwebtoken");
 const { promisify } = require("util");
 
@@ -115,26 +116,34 @@ exports.givePermissionTo = (...roles) => {
   };
 };
 
-exports.restrictToOwnerOnly = async (req, res, next) => {
-  try {
-    const job = await Job.findById(req.params.id);
+exports.restrictToOwnerOnly = (Model) => {
+  return async (req, res, next) => {
+    try {
+      const doc = await Model.findById(req.params.id);
 
-    if (!job) {
-      return next(new Error("No job found with that id"));
+      if (!doc) {
+        return next(new Error("No document found with that id"));
+      }
+
+      console.log(req.user._id);
+      console.log("doc : ", doc);
+      // console.log(
+      //   "ids : ",
+      //   doc.postedBy.toString() !== req.user._id.toString(),
+      // );
+
+      const ownerId = doc.postedBy || doc.candidate;
+      if (ownerId.toString() !== req.user._id.toString()) {
+        return next(
+          new Error(
+            "Only the user who posted this document can perform this action",
+          ),
+        );
+      }
+
+      next();
+    } catch (error) {
+      next(error);
     }
-
-    console.log(req.user._id);
-    console.log("ids : ", job.postedBy.toString() !== req.user._id.toString());
-    if (job.postedBy.toString() !== req.user._id.toString()) {
-      return next(
-        new Error(
-          "Only the user who posted this document can perform this action",
-        ),
-      );
-    }
-
-    next();
-  } catch (error) {
-    next(error);
-  }
+  };
 };

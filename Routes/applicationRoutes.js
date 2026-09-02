@@ -4,6 +4,7 @@ const Router = express.Router();
 
 const applicationControllers = require("../Controllers/applicationController");
 const authControllers = require("../Controllers/authController");
+const Application = require("../Models/applicationModel");
 
 Router.route("/").get(applicationControllers.getApplications);
 
@@ -18,8 +19,14 @@ Router.route("/:id")
   .patch(
     authControllers.protect,
     authControllers.givePermissionTo("candidate"),
-    authControllers.restrictToOwnerOnly,
+    authControllers.restrictToOwnerOnly(Application),
     applicationControllers.updateMyApplication,
+  )
+  .delete(
+    authControllers.protect,
+    authControllers.givePermissionTo("candidate"),
+    authControllers.restrictToOwnerOnly(Application),
+    applicationControllers.deleteMyApplication,
   );
 
 module.exports = Router;

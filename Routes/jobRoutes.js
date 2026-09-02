@@ -4,6 +4,7 @@ const Router = express.Router();
 
 const jobControllers = require("../Controllers/jobController");
 const authControllers = require("../Controllers/authController");
+const Job = require("../Models/jobModel");
 
 Router.route("/")
   .get(jobControllers.getAllJobs)
@@ -16,7 +17,6 @@ Router.route("/")
 Router.route("/myJobs").get(
   authControllers.protect,
   authControllers.givePermissionTo("employer"),
-  //authControllers.restrictToOwnerOnly,
   jobControllers.myJobs,
 );
 
@@ -25,13 +25,13 @@ Router.route("/:id")
   .patch(
     authControllers.protect,
     authControllers.givePermissionTo("employer"),
-    authControllers.restrictToOwnerOnly,
+    authControllers.restrictToOwnerOnly(Job),
     jobControllers.updateJob,
   )
   .delete(
     authControllers.protect,
     authControllers.givePermissionTo("employer"),
-    authControllers.restrictToOwnerOnly,
+    authControllers.restrictToOwnerOnly(Job),
     jobControllers.deleteJob,
   );
 

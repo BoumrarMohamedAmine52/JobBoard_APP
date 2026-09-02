@@ -56,7 +56,30 @@ exports.myApplications = async (req, res, next) => {
 
 exports.updateMyApplication = async (req, res, next) => {
   try {
+    const updatedApplication = await Application.findByIdAndUpdate(
+      req.params.id,
+      {
+        coverLetter: req.body.coverLetter,
+      },
+      {
+        new: true,
+        runValidators: true,
+      },
+    );
+
+    if (!updatedApplication) {
+      return next(new Error("No application found with that id"));
+    }
+
+    res.status(200).json({
+      status: "Success",
+      data: {
+        updatedApplication,
+      },
+    });
   } catch (error) {
     next(error);
   }
 };
+
+exports.deleteMyApplication = async();
