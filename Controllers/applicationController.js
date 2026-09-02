@@ -97,3 +97,24 @@ exports.deleteMyApplication = async (req, res, next) => {
     next(error);
   }
 };
+
+exports.setJobCandidateID = (req, res, next) => {
+  if (!req.body.job) req.body.job = req.params.id;
+  if (!req.body.candidate) req.body.candidate = req.user.id;
+  next();
+};
+
+exports.addApplication = async (req, res, next) => {
+  try {
+    const newApplication = await Application.create(req.body);
+
+    res.status(200).json({
+      status: "Success",
+      data: {
+        newApplication,
+      },
+    });
+  } catch (error) {
+    next(error);
+  }
+};

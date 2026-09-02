@@ -6,7 +6,14 @@ const applicationControllers = require("../Controllers/applicationController");
 const authControllers = require("../Controllers/authController");
 const Application = require("../Models/applicationModel");
 
-Router.route("/").get(applicationControllers.getApplications);
+Router.route("/")
+  .get(applicationControllers.getApplications)
+  .post(
+    authControllers.protect,
+    authControllers.givePermissionTo("candidate"),
+    applicationControllers.setJobCandidateID,
+    applicationControllers.addApplication,
+  );
 
 Router.route("/myApplications").get(
   authControllers.protect,
@@ -16,6 +23,7 @@ Router.route("/myApplications").get(
 
 Router.route("/:id")
   .get(applicationControllers.getApplication)
+
   .patch(
     authControllers.protect,
     authControllers.givePermissionTo("candidate"),
