@@ -9,18 +9,11 @@ app.use(morgan("dev"));
 
 const JobRouter = require("./Routes/jobRoutes");
 const userRouter = require("./Routes/userRoutes");
-
-// app.get("/", (req, res) => {
-//   res.status(200).json({
-//     status: "Sucess",
-//     data: {
-//       message: "hello from the / route.",
-//     },
-//   });
-// });
+const applicationRouter = require("./Routes/applicationRoutes");
 
 app.use("/api/jb1/jobs", JobRouter);
 app.use("/api/jb1/users", userRouter);
+app.use("/api/jb1/applications", applicationRouter);
 
 app.all("*", (req, res, next) => {
   res.status(404).json({

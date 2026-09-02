@@ -13,6 +13,13 @@ Router.route("/")
     jobControllers.addJob,
   );
 
+Router.route("/myJobs").get(
+  authControllers.protect,
+  authControllers.givePermissionTo("employer"),
+  //authControllers.restrictToOwnerOnly,
+  jobControllers.myJobs,
+);
+
 Router.route("/:id")
   .get(jobControllers.getJob)
   .patch(

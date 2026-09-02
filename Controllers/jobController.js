@@ -36,15 +36,6 @@ exports.getJob = async (req, res, next) => {
 
 exports.addJob = async (req, res, next) => {
   try {
-    // check if the user posting the job offer is an employer and not a candidtae
-    //const user = await User.findById(req.body.postedBy);
-
-    // if (user.role !== "employer") {
-    //   return next(new Error("the job must be posted only by an employer"));
-    // }
-
-    req.body.postedBy = req.user.id;
-
     // save the new job in the db
     const newJob = await Job.create(req.body);
 
@@ -92,6 +83,25 @@ exports.deleteJob = async (req, res, next) => {
       status: "Success",
       data: {
         deletedJob,
+      },
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+exports.myJobs = async (req, res, next) => {
+  try {
+    const myJobs = await Job.find({ postedBy: req.user.id });
+
+    if (!myJobs) {
+      return next(new Error("U didn't post any jobs offer yet."));
+    }
+
+    res.status(200).json({
+      status: "Success",
+      data: {
+        myJobs,
       },
     });
   } catch (error) {

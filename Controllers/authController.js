@@ -97,6 +97,7 @@ exports.protect = async (req, res, next) => {
     // grant access to the protected route.
     req.user = currentUser;
     console.log(req.user);
+    req.user.id = currentUser._id.toString();
     next();
   } catch (error) {
     next(error);
@@ -122,9 +123,9 @@ exports.restrictToOwnerOnly = async (req, res, next) => {
       return next(new Error("No job found with that id"));
     }
 
-    console.log(req.user.id);
-    console.log("ids : ", job.postedBy !== req.user.id);
-    if (job.postedBy.toString() !== req.user.id) {
+    console.log(req.user._id);
+    console.log("ids : ", job.postedBy.toString() !== req.user._id.toString());
+    if (job.postedBy.toString() !== req.user._id.toString()) {
       return next(
         new Error(
           "Only the user who posted this document can perform this action",
