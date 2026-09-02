@@ -82,4 +82,18 @@ exports.updateMyApplication = async (req, res, next) => {
   }
 };
 
-exports.deleteMyApplication = async();
+exports.deleteMyApplication = async (req, res, next) => {
+  try {
+    const deletedApp = await Application.findByIdAndDelete(req.params.id);
+
+    if (!deletedApp) {
+      return next(new Error("No application found with that ID."));
+    }
+
+    res.status(204).json({
+      status: "Success",
+    });
+  } catch (error) {
+    next(error);
+  }
+};
