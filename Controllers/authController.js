@@ -36,7 +36,7 @@ exports.logIn = async (req, res, next) => {
       return next(new Error("Please provide email and password"));
     }
 
-    const user = await User.findOne({ email });
+    const user = await User.findOne({ email }).select("+password");
 
     if (!user || !(await user.correctPassword(password, user.password))) {
       return next(new Error("wrong email or password"));
@@ -148,4 +148,29 @@ exports.restrictToOwnerOnly = (Model) => {
       next(error);
     }
   };
+};
+
+exports.updatePassword = async (req, res, next) => {
+  try {
+    const user = await User.findById(req.user.id).select("+password");
+
+    if (
+      !(await user.correctPassword(req.body.currentPassword, user.password))
+    ) {
+      return next(new Error("wrong current Password"));
+    }
+
+    user.password = req.body.newPassword;
+    user.passwordConfirm = req.body.newPasswordConfirm;
+    console.log(user);
+    await user.save();
+    res.status(203).json({
+      status: "Success",
+      data: {
+        user,
+      },
+    });
+  } catch (error) {
+    next(error);
+  }
 };

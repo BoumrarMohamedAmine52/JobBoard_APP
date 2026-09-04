@@ -18,6 +18,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "The user must provide a password"],
     minlength: [8, "the password must have at least 8 characters."],
+    select: false,
   },
   passwordConfirm: {
     type: String,
@@ -29,7 +30,7 @@ const userSchema = new mongoose.Schema({
       },
       message: "the passwords are not the same.",
     },
-    select: false,
+    //select: false,
   },
   phoneNumber: {
     type: String,
@@ -119,6 +120,12 @@ userSchema.methods.passwordChanged = function (JWTtimestamp) {
 
   return false;
 };
+
+userSchema.pre("save", function () {
+  if (!this.isModified("password") || this.isNew) return;
+
+  this.passwordChangedDate = Date.now() - 1000;
+});
 
 const User = mongoose.model("User", userSchema);
 
