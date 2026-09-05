@@ -1,121 +1,99 @@
 const Application = require("../Models/applicationModel");
 const Job = require("../Models/jobModel");
+const AppError = require("../Utils/AppError");
+const asyncHandler = require("express-async-handler");
 
-exports.getApplications = async (req, res, next) => {
-  try {
-    const applications = await Application.find();
+exports.getApplications = asyncHandler(async (req, res, next) => {
+  const applications = await Application.find();
 
-    res.status(200).json({
-      status: "Success",
-      data: {
-        applications,
-      },
-    });
-  } catch (error) {
-    next(error);
+  res.status(200).json({
+    status: "Success",
+    data: {
+      applications,
+    },
+  });
+});
+
+exports.getApplication = asyncHandler(async (req, res, next) => {
+  const application = await Application.findById(req.params.id);
+
+  if (!application) {
+    return next(new AppError("No application found with that id.", 404));
   }
-};
 
-exports.getApplication = async (req, res, next) => {
-  try {
-    const application = await Application.findById(req.params.id);
+  res.status(200).json({
+    status: "Success",
+    data: {
+      application,
+    },
+  });
+});
 
-    if (!application) {
-      return next(new Error("No application found with that id."));
-    }
+exports.myApplications = asyncHandler(async (req, res, next) => {
+  const myApps = await Application.find({ candidate: req.user.id });
 
-    res.status(200).json({
-      status: "Success",
-      data: {
-        application,
-      },
-    });
-  } catch (error) {
-    next(error);
+  if (!myApps) {
+    return next(new AppError("U didn't apply to any job offer yet.", 404));
   }
-};
 
-exports.myApplications = async (req, res, next) => {
-  try {
-    const myApps = await Application.find({ candidate: req.user.id });
+  res.status(200).json({
+    status: "Success",
+    data: {
+      myApps,
+    },
+  });
+});
 
-    if (!myApps) {
-      return next(new Error("U didn't apply to any job offer yet."));
-    }
+exports.updateMyApplication = asyncHandler(async (req, res, next) => {
+  const updatedApplication = await Application.findByIdAndUpdate(
+    req.params.id,
+    {
+      coverLetter: req.body.coverLetter,
+    },
+    {
+      new: true,
+      runValidators: true,
+    },
+  );
 
-    res.status(200).json({
-      status: "Success",
-      data: {
-        myApps,
-      },
-    });
-  } catch (error) {
-    next(error);
+  if (!updatedApplication) {
+    return next(new AppError("No application found with that id", 404));
   }
-};
 
-exports.updateMyApplication = async (req, res, next) => {
-  try {
-    const updatedApplication = await Application.findByIdAndUpdate(
-      req.params.id,
-      {
-        coverLetter: req.body.coverLetter,
-      },
-      {
-        new: true,
-        runValidators: true,
-      },
-    );
+  res.status(201).json({
+    status: "Success",
+    data: {
+      updatedApplication,
+    },
+  });
+});
 
-    if (!updatedApplication) {
-      return next(new Error("No application found with that id"));
-    }
+exports.deleteMyApplication = asyncHandler(async (req, res, next) => {
+  const deletedApp = await Application.findByIdAndDelete(req.params.id);
 
-    res.status(200).json({
-      status: "Success",
-      data: {
-        updatedApplication,
-      },
-    });
-  } catch (error) {
-    next(error);
+  if (!deletedApp) {
+    return next(new AppError("No application found with that ID.", 404));
   }
-};
 
-exports.deleteMyApplication = async (req, res, next) => {
-  try {
-    const deletedApp = await Application.findByIdAndDelete(req.params.id);
+  res.status(204).json({
+    status: "Success",
+  });
+});
 
-    if (!deletedApp) {
-      return next(new Error("No application found with that ID."));
-    }
+exports.getJobApplications = asyncHandler(async (req, res, next) => {
+  const jobApplications = await Application.find({ job: req.params.id });
 
-    res.status(204).json({
-      status: "Success",
-    });
-  } catch (error) {
-    next(error);
+  if (!jobApplications) {
+    return next(new AppError("No candidate applied for this job yet.", 404));
   }
-};
 
-exports.getJobApplications = async (req, res, next) => {
-  try {
-    const jobApplications = await Application.find({ job: req.params.id });
-
-    if (!jobApplications) {
-      return next(new Error("No candidate applied for this job yet."));
-    }
-
-    res.status(200).json({
-      status: "Success",
-      data: {
-        jobApplications,
-      },
-    });
-  } catch (error) {
-    next(error);
-  }
-};
+  res.status(200).json({
+    status: "Success",
+    data: {
+      jobApplications,
+    },
+  });
+});
 
 exports.setJobCandidateID = (req, res, next) => {
   if (!req.body.job) req.body.job = req.params.id;
@@ -123,17 +101,13 @@ exports.setJobCandidateID = (req, res, next) => {
   next();
 };
 
-exports.addApplication = async (req, res, next) => {
-  try {
-    const newApplication = await Application.create(req.body);
+exports.addApplication = asyncHandler(async (req, res, next) => {
+  const newApplication = await Application.create(req.body);
 
-    res.status(200).json({
-      status: "Success",
-      data: {
-        newApplication,
-      },
-    });
-  } catch (error) {
-    next(error);
-  }
-};
+  res.status(201).json({
+    status: "Success",
+    data: {
+      newApplication,
+    },
+  });
+});
