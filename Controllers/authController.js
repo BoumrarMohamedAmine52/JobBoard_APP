@@ -5,6 +5,8 @@ const jwt = require("jsonwebtoken");
 const { promisify } = require("util");
 const AppError = require("../utils/AppError");
 const asyncHandler = require("express-async-handler");
+const sendEmail = require("../Utils/email");
+const crypto = require("crypto");
 
 const signToken = (id) => {
   return jwt.sign({ id: id }, process.env.JWT_SECRET, {
@@ -153,6 +155,78 @@ exports.updatePassword = asyncHandler(async (req, res, next) => {
   user.passwordConfirm = req.body.newPasswordConfirm;
   console.log(user);
   await user.save();
+  res.status(201).json({
+    status: "Success",
+    data: {
+      user,
+    },
+  });
+});
+
+exports.forgotPassword = asyncHandler(async (req, res, next) => {
+  const user = await User.findOne({ email: req.body.email });
+
+  if (!user) {
+    return next(new AppError("There is no user with that email.", 400));
+  }
+
+  const resetToken = user.createResetPasswordToken();
+  await user.save({ validateBeforeSave: false });
+
+  const resetUrl = `${req.protocol}://${req.get("host")}/api/jb1/users/resetPassword/${resetToken}`;
+
+  const message = `Forgot ur password ? 
+  please send Patch request to this url : ${resetUrl}, 
+  with the new password and confirm password on the body,
+  if u don't want to reset ur password ignore this message.`;
+
+  try {
+    await sendEmail({
+      email: user.email,
+      subject: "Reset Password token (valid for 10 min).",
+      message: message,
+    });
+
+    res.status(200).json({
+      status: "Success",
+      message: "the reset token was sent to ur email, check it .",
+    });
+  } catch (error) {
+    user.resetToken = undefined;
+    user.expiredresetTokenDate = undefined;
+    await user.save({ validateBeforeSave: false });
+
+    return next(new AppError("There was a problem sending the email", 500));
+  }
+});
+
+exports.resetPassword = asyncHandler(async (req, res, next) => {
+  const user = await User.findOne({ email: req.body.email });
+
+  if (!user) {
+    return next(new AppError("User with that email dod not exists.", 400));
+  }
+
+  if (Date.now() > user.expiredresetTokenDate) {
+    return next(new AppError("Expired reset token."));
+  }
+
+  const cryptedResetToken = crypto
+    .createHash("sha-256")
+    .update(req.params.resetToken)
+    .digest("hex");
+
+  if (cryptedResetToken !== user.resetToken) {
+    return next(new AppError("Invalid token"));
+  }
+
+  user.password = req.body.newPassword;
+  user.passwordConfirm = req.body.newPasswordConfirm;
+  user.resetToken = undefined;
+  user.expiredresetTokenDate = undefined;
+
+  await user.save();
+
   res.status(201).json({
     status: "Success",
     data: {
